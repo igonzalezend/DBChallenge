@@ -1,17 +1,18 @@
-CREATE TABLE `dbchallenge`.`dbchallenge` (
+CREATE TABLE `challenge` (
   `seq` BIGINT NULL,
-  `yn` TINYINT NULL,
-  `age` TINYINT NULL,
-  `birthday` DATE NULL,
-  `bool` TINYINT NULL,
-  `ccnumber` INT NULL,
+  `yn` VARCHAR(1) NULL,
+  `age` INT(3) NULL,
+  `birthday` VARCHAR(20) NULL,
+  `bool` VARCHAR(6) NULL,
   `city` VARCHAR(45) NULL,
-  `date` DATE NULL,
-  `digit` INT NULL,
+  `ccnumber` BIGINT NULL,
+  `date` VARCHAR(20) NULL,
+  `digit` BIGINT NULL,
   `dollar` VARCHAR(45) NULL,
   `first` VARCHAR(45) NULL,
-  `chifre` INT NULL,
+  `chifre` DOUBLE NULL,
   `name` VARCHAR(45) NULL,
   `last` VARCHAR(45) NULL,
-  `paragraph` VARCHAR(45) NULL,
-  `sentence` VARCHAR(45) NULL);
+  `paragraph` TEXT NULL,
+  `sentence` TEXT NULL
+  );
