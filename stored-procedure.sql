@@ -11,7 +11,7 @@ BEGIN
     SET @max = 0;
     CALL calculate_mean(@mean);
     CALL calculate_median(@median);
-    CALL calculate_md(@md);
+    CALL calculate_mode(@md);
     CALL calculate_min(@min);
     CALL calculate_max(@max);
     SELECT @mean;
