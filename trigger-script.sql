@@ -9,7 +9,7 @@ UPDATE challenge
     
 # Creates trigger that checks if the new value to be updated in trgr is even or odd 
 # and changes that value depending on the condition
-delimiter //
+DELIMITER //
 CREATE TRIGGER trigger_challenge BEFORE UPDATE ON challenge
 FOR EACH ROW
 BEGIN
@@ -19,4 +19,4 @@ BEGIN
 		SET NEW.trgr = NEW.trgr - 5;
 	END IF;
 END;//
-delimiter ;
+DELIMITER ;
