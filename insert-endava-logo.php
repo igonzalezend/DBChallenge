@@ -1,5 +1,5 @@
 <?php
-	$datastring = file_get_contents('C:\Users\jdominguez\Documents\endava-logo.png');
+	$datastring = file_get_contents('C:\Users\jdominguez\OneDrive - ENDAVA\Documents\endava-logo.png');
 	$encoded = base64_encode($datastring);
 
 	//Open connection to DB
@@ -11,7 +11,7 @@
 	}
  
 	//Attempt insert query execution
-	$sql = "INSERT INTO logo VALUES (2, '$encoded')";
+	$sql = "INSERT INTO logo VALUES (1, '$encoded')";
 	if(mysqli_query($link, $sql)){
     	echo "Records inserted successfully.";
 	} else{
