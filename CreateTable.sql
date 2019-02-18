@@ -1,5 +1,5 @@
 CREATE DATABASE db_challenge;
-
+USE db_challenge;
 CREATE TABLE `challenge` (
   `seq` BIGINT NULL,
   `yn` VARCHAR(1) NULL,
