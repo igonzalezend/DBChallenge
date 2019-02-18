@@ -8,7 +8,9 @@ mysql -h localhost -u root -p1234 --execute "
 	SET @min = 0;
 	SET @max = 0;
 	CALL calculus(@mean, @median, @md, @min, @max);
-	SELECT @mean, @median, @md, @min, @max;" 
+	SELECT @mean, @median, @md, @min, @max; 
+	exit();
+	"
 
 : '
 	mysql -h mysqlchallenge.cm6hb8mfglop.us-east-1.rds.amazonaws.com -u Team2 -pEndava12345! 
