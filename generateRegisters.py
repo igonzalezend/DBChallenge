@@ -40,6 +40,8 @@ with open('Registers100000.csv', 'w', newline='') as csvfile:
 
         date = [str(random.randint(18,65)) +"/"+ str(month) +"/"+ str(day)]
 
+        trgr = seq + 100
+
         dollar = ["$" + str(random.randint(0,10000)) + "." + str(random.randint(1,9)) + str(random.randint(1,9))]
         writer.writerow([seq] + 
                         random.choices(['Y', 'N']) + 
@@ -56,5 +58,6 @@ with open('Registers100000.csv', 'w', newline='') as csvfile:
                         random.choices(name) +
                         random.choices(first) +
                         [text] +
-                        [sentence])
+                        [sentence] + 
+                        [trgr])
         seq += 1
