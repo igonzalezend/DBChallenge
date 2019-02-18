@@ -1,6 +1,6 @@
 #!/bin/bash
 
-	mysql -h mysqlchallenge.cm6hb8mfglop.us-east-1.rds.amazonaws.com -u Team2 -p Endava12345! 
+	mysql -h mysqlchallenge.cm6hb8mfglop.us-east-1.rds.amazonaws.com -u Team2 -pEndava12345! 
 	USE challenge
 
 	SET @mean = 0;
